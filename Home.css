@@ -1,0 +1,606 @@
+/* Base navbar styles */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Joti+One&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;/* Ensures space at the beginning and end of the navbar */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand-port {
+    color: rgb(12, 12, 12);
+    font-size: 25px; /* Adjust size as needed */
+    font-family: cursive;
+}
+
+.brand-folio {
+    color: rgb(245, 106, 245);
+    font-size: 25px; /* Adjust size as needed */
+    font-family: cursive;
+}
+
+.navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    padding: 0 10px; /* Adjust spacing between navbar items */
+}
+
+.navbar-links li a {
+    color: black; /* Text color */
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.navbar-links li a:hover {
+    background-color: #A7A1FB; /* Purple background on hover */
+    color: black; /* Change text color on hover */
+}
+.navbar-nav li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px 0;
+    font-size: 25px; /* Adjusted font size to match the PortFolio title */
+}
+@keyframes waveAnimation {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-20deg);
+    }
+    75% {
+        transform: rotate(20deg);
+    }
+}
+
+.greeting img {
+    width: 60px; /* Adjust the width as needed */
+    height: auto; /* Keeps the aspect ratio intact */
+    display: block;
+    animation: waveAnimation 1s ease-in-out infinite;
+    padding: 0 150px;
+   margin-top: 220px;
+   font-family: 'Architects Daughter', cursive;
+
+}
+.greeting{
+    display: flex; /* This makes its children (the img and h3) layout in a row */
+    align-items: center; /* This vertically centers the children in the div */
+    font-family: 'Architects Daughter', cursive; 
+    margin-top: -140px;
+}
+.greeting h3{
+    margin-top: 270px;
+    margin-left: -130px;
+    font-size: 23px;
+
+}
+.greeting h1{
+    font-family: 'Joti One', cursive;
+    margin-top: 380px;
+    margin-left: -170px;
+    font-size: 40px;  
+
+}
+.greeting p{
+    font-family: 'Architects Daughter', cursive; 
+    margin-top: 539px;
+    margin-left: -275px;
+    font-size: 17px;
+    font-weight: light;
+    
+
+}
+.greeting button {
+  background-color: #A7A1FB;
+  color: black; /* Black text */
+  font-family: 'Architects Daughter', cursive; /* Architects Daughter font */
+    border: none; /* Remove default border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 10px 20px; /* Adjust padding to your liking */
+    cursor: pointer; /* Changes cursor to pointer when hovering over the button */
+    transition: background-color 0.3s;
+    margin-top: 680px;
+    margin-left: -420px;
+}
+
+.greeting button:hover {
+    background-color: #d096eb; /* Slightly darker purple on hover for feedback */
+}
+.yellow img{
+    width: 400px;
+    margin-left: 1200px;
+    margin-top: -400px;
+
+}
+.me img{
+    width: 500px;
+    margin-left: 1200px;
+    margin-top: -470px;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+.container{
+    position:relative;
+    width: 1200px;
+    height: 50px;
+    margin: 240px auto;
+}
+.container .box1{
+    position: relative;
+    width: calc(400px - 3px);
+    height: calc(300px - 30px);
+    border: 4px solid plum;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 770px;
+    margin-top: -150px;
+    
+
+}
+.container .box2{
+    position: relative;
+    width: calc(400px - 3px);
+    height: calc(300px - 30px);
+    border: 4px solid plum;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 560px;
+
+}
+.container .box3{
+    position: relative;
+    width: calc(400px - 3px);
+    height: calc(300px - 30px);
+    border: 4px solid plum;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 990px;
+    margin-top: -283px;
+
+}
+.container h1{
+    position: absolute;
+    top: 120px; /* Adjust this value to move your h1 up or down */
+    transform: translateX(-50%); /* Adjust according to the exact positioning you need */
+    font-family: 'Joti One', cursive;
+    font-size: 40px;
+    font-weight: light;
+    border-bottom: 2px solid plum; /* Adjust the thickness and color as needed */
+    padding-bottom: 5px;
+}
+.container p{
+    font-family: 'Architects Daughter', cursive;
+    font-weight: light;
+    margin-left: -190px;
+    position: absolute;
+    top: 220px;
+    font-size: 17px;
+
+
+}
+.box1 h2{
+    font-size: 30px;
+    font-family: 'Joti One', cursive;
+    margin-left: 80px;
+    margin-top: 15px;
+}
+.box1 p{
+    margin-left: 80px;
+    margin-top: -80px;
+}
+.icon1 .fa {
+    font-size: 34px; /* Adjust the size as needed */
+    color: #333; /* Change the color as desired */
+    margin-bottom: 10px; /* Adds space below the icon */
+    margin-left: 150px;
+    margin-top: 20px;
+    
+}
+.box2 h2{
+    font-size: 30px;
+    font-family: 'Joti One', cursive;
+    margin-left: 99px;
+    margin-top: 15px;
+
+}
+.box2 p{
+    margin-left: 80px;
+    margin-top: -80px;
+
+}
+.icon2 .fa{
+    font-size: 34px; /* Adjust the size as needed */
+    color: #333; /* Change the color as desired */
+    margin-bottom: 10px; /* Adds space below the icon */
+    margin-left: 150px;
+    margin-top: 20px;
+
+}
+.box3 h2{
+    font-size: 25px;
+    font-family: 'Joti One', cursive;
+    margin-left: 99px;
+    margin-top: 15px;
+
+}
+.box3 p{
+    margin-left: 80px;
+    margin-top: -80px;
+
+}
+.icon3 .fa{
+    font-size: 34px; /* Adjust the size as needed */
+    color: #333; /* Change the color as desired */
+    margin-bottom: 10px; /* Adds space below the icon */
+    margin-left: 150px;
+    margin-top: 20px;
+
+}
+.container .box4{
+    position: relative;
+    width: calc(400px - 3px);
+    height: calc(300px - 30px);
+    border: 4px solid plum;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 770px;
+
+}
+.box4 h2{
+    font-size: 25px;
+    font-family: 'Joti One', cursive;
+    margin-left: 82px;
+    margin-top: 15px;
+
+}
+.box4 p{
+    margin-left: 80px;
+    margin-top: -80px;
+    position: absolute;
+
+}
+.icon4 .fa{
+    font-size: 34px; /* Adjust the size as needed */
+    color: #333; /* Change the color as desired */
+    margin-bottom: 10px; /* Adds space below the icon */
+    margin-left: 150px;
+    margin-top: 20px;
+
+}
+.me2 img{
+    margin-top: -310px;
+    margin-left: -230px;
+}
+.line img{
+    margin-top: 100px;
+    margin-left: -170px;
+
+}
+
+.box1:hover {
+    background-color: rgb(245, 106, 245); /* Change to your preferred shade of purple */
+    /* Optional: Add a transition effect to make the color change smooth */
+    transition: background-color 0.3s ease;
+}
+.box2:hover {
+    background-color: rgb(245, 106, 245); /* Change to your preferred shade of purple */
+    /* Optional: Add a transition effect to make the color change smooth */
+    transition: background-color 0.3s ease;
+}
+.box3:hover {
+    background-color: rgb(245, 106, 245); /* Change to your preferred shade of purple */
+    /* Optional: Add a transition effect to make the color change smooth */
+    transition: background-color 0.3s ease;
+}
+.box4:hover {
+    background-color: rgb(245, 106, 245); /* Change to your preferred shade of purple */
+    /* Optional: Add a transition effect to make the color change smooth */
+    transition: background-color 0.3s ease;
+}
+.project {
+    width: 200px; /* Adjust based on your preference */
+    border: 2px solid #000; /* Box border */
+    margin: 10px; /* Spacing between boxes */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.project img {
+    width: 100%; /* Make image fit the box */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.details {
+    display: none; /* Hide details initially */
+    padding: 10px; /* Spacing inside details box */
+}
+.projects .box5{
+    position: relative;
+    width: calc(400px - 3px);
+    height: calc(420px - 30px);
+    border: 4px solid plum;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 800px;
+    margin-left: 150px;
+}
+.box5 h1{
+    font-family: 'Joti One', cursive;
+    margin-left: 54px;
+    font-weight: normal;
+    font-size: 27px;
+
+}
+.icon5 .fa{
+    font-size: 34px; /* Adjust the size as needed */
+    color: #333; /* Change the color as desired */
+    margin-bottom: 10px; /* Adds space below the icon */
+    margin-left: 170px;
+    margin-top: 20px;
+
+}
+.box5 p{
+    margin-left: 60px;
+    margin-top: -10px;
+    position: absolute;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 17px;
+    font-weight: light;
+
+
+}
+.box5 button {
+    background-color: #A7A1FB; /* A soft purple; change as needed */
+    color: black; /* Button text color */
+    font-family: 'Architects Daughter', cursive; /* Applying the font */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Change mouse cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 150px;
+    margin-left: 130px;
+}
+
+.box5 button:hover {
+    background-color: #957DAD; /* Darker shade of purple for hover effect; adjust as needed */
+}
+
+
+
+.projects .box6{
+    position: relative;
+    width: calc(400px - 3px);
+    height: calc(420px - 30px);
+    border: 4px solid plum;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 800px;
+    margin-left: 150px;
+}
+.box6 h1{
+    font-family: 'Joti One', cursive;
+    margin-left: 56px;
+    font-weight: normal;
+    font-size: 25px;
+
+}
+.icon6 .fa{
+    font-size: 34px; /* Adjust the size as needed */
+    color: #333; /* Change the color as desired */
+    margin-bottom: 10px; /* Adds space below the icon */
+    margin-left: 170px;
+    margin-top: 20px;
+
+}
+.box6 p{
+    margin-left: 60px;
+    margin-top: -10px;
+    position: absolute;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 17px;
+    font-weight: light;
+
+
+}
+.box6 button {
+    background-color: #A7A1FB; /* A soft purple; change as needed */
+    color: black; /* Button text color */
+    font-family: 'Architects Daughter', cursive; /* Applying the font */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Change mouse cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 150px;
+    margin-left: 130px;
+}
+
+.box6 button:hover {
+    background-color: #957DAD; /* Darker shade of purple for hover effect; adjust as needed */
+}
+
+
+
+
+
+.projects .box7{
+    position: relative;
+    width: calc(400px - 3px);
+    height: calc(420px - 30px);
+    border: 4px solid plum;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 800px;
+    margin-left: 150px;
+}
+.box7 h1{
+    font-family: 'Joti One', cursive;
+    margin-left: 55px;
+    font-weight: normal;
+    font-size: 25px;
+
+}
+.icon7 .fa{
+    font-size: 34px; /* Adjust the size as needed */
+    color: #333; /* Change the color as desired */
+    margin-bottom: 10px; /* Adds space below the icon */
+    margin-left: 170px;
+    margin-top: 20px;
+
+}
+.box7 p{
+    margin-left: 60px;
+    margin-top: -10px;
+    position: absolute;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 17px;
+    font-weight: light;
+
+
+}
+.box7 button {
+    background-color: #A7A1FB; /* A soft purple; change as needed */
+    color: black; /* Button text color */
+    font-family: 'Architects Daughter', cursive; /* Applying the font */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Change mouse cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 150px;
+    margin-left: 130px;
+}
+
+.box7 button:hover {
+    background-color: #957DAD; /* Darker shade of purple for hover effect; adjust as needed */
+}
+.mypro h1{
+    font-family: 'Joti One', cursive;
+    position: absolute;
+    margin-top: 1150px;
+    margin-left: 800px;
+    font-size: 40px;
+    font-weight: light;
+    border-bottom: 2px solid plum; /* Adjust the thickness and color as needed */
+    padding-bottom: 5px;
+
+}
+.box5:hover {
+    background-color: rgb(245, 106, 245); /* Change to your preferred shade of purple */
+    /* Optional: Add a transition effect to make the color change smooth */
+    transition: background-color 0.3s ease;
+}
+.box6:hover {
+    background-color: rgb(245, 106, 245); /* Change to your preferred shade of purple */
+    /* Optional: Add a transition effect to make the color change smooth */
+    transition: background-color 0.3s ease;
+}
+.box7:hover {
+    background-color: rgb(245, 106, 245); /* Change to your preferred shade of purple */
+    /* Optional: Add a transition effect to make the color change smooth */
+    transition: background-color 0.3s ease;
+}
+.aboutme p{
+    margin-top: 600px;
+    margin-left: 1050px;
+    position: absolute;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 17px;
+    font-weight: light;
+
+}
+.aboutme h1{
+    margin-top: 550px;
+    margin-left: 1200px;
+    position: absolute;
+    font-family: 'Joti One', cursive;
+
+}
+.form-container .box8 {
+    border: 4px solid plum; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    text-align: center; /* Center-align the text */
+    margin-top: 1950px;
+    width: 50%; /* Adjust this value as needed */
+    max-width: 600px; 
+    margin-left: 600px;
+}
+
+.form-container h2 {
+    color: black; /* Blue color for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    font-family: 'Joti One', cursive;
+}
+
+.form-container p {
+    color: #333; /* Dark grey color for the text */
+    margin-bottom: 20px; /* Space below the paragraph */
+    font-family: 'Architects Daughter', cursive;
+    font-size: 17px;
+    font-weight: light;
+}
+
+/* Styling icons */
+.form-container .icon8, .form-container .icon9, .form-container .icon10 {
+    font-size: 24px; /* Icon size */
+    margin: 10px; /* Space around icons */
+    color: plum; /* Icon color */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    display: flex;
+}
+
+.form-container .icon8:hover, .form-container .icon9:hover, .form-container .icon10:hover {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+    color: rgb(245, 106, 245); /* Darker shade of blue on hover */
+}
+
+.icons-container {
+    display: flex; /* This will layout the direct children (icons) in a row */
+    justify-content: center; /* This centers the icons in the flex container */
+    gap: 10px; /* Adjusts space between the icons */
+}
+
+/* Optional: Align the icons vertically to the middle if needed */
+.icon8, .icon9, .icon10 {
+    display: flex;
+    align-items: center;
+}
+
